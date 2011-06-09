@@ -1,4 +1,4 @@
-# Import global settings to make it easier to extend settings. 
+# Import global settings to make it easier to extend settings.
 from django.conf.global_settings import *
 
 #==============================================================================
@@ -27,7 +27,7 @@ EMAIL_SUBJECT_PREFIX = '[django-de.org] '
 #==============================================================================
 
 USE_I18N = True
-USE_L10N = False 
+USE_L10N = False
 
 LANGUAGE_CODE = 'de'
 LANGUAGES = (
@@ -120,6 +120,7 @@ INSTALLED_APPS = (
     'django.contrib.admindocs',
     'django.contrib.humanize',
     'django.contrib.staticfiles',
+    'django.contrib.webdesign',
 
     # 3rd Party
     'south',
@@ -127,7 +128,7 @@ INSTALLED_APPS = (
     'compressor',
 
     # Apps
-    #'django_de.apps.foo',
+    'django_de.apps.homepage',
 )
 
 #==============================================================================

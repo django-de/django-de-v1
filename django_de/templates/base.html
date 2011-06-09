@@ -1,17 +1,52 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html>
 
 <html>
 <head>
     <title>{% block head_title %}{% endblock %}</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    
+    <link rel="stylesheet" href="{{ STATIC_URL }}theme/base.css" type="text/css" />
 </head>
 <body>
-
-<div id="container">
-    {% block content %}
-    {% endblock %}
+<div id="page">
+{% block page %}
+    <div id="pageHeader">
+        <nav>
+            <a href="{% url homepage %}" class="home"><span class="invisible">Django-DE</span></a>
+            <a href="#" class="first">Home</a>
+            <a href="#">Infos</a>
+            <a href="#">News</a>
+            <a href="#">Verein</a>
+            <a href="#" class="last">Jobs</a>
+        </nav>
+        
+        {% block teaser %}
+        <header>
+            <h1>
+                <span class="line1"><span class="quote quote-tl"></span>Django ist ein Python-Web-Framework</span><br/>
+                <span class="line2">für die schnelle Entwicklung von</span><br/>
+                <span class="line3">sauberen, pragmatischen Lösungen.<span class="quote quote-tr"></span></span>
+            </h1>
+            <p class="description">
+                Da Django ursprünglich für Nachrichtenplattformen entwickelt wurde,
+                ist es darauf optimiert, die straffen Deadlines in Online-Redaktionen
+                einzuhalten und eleganten Webanwendungen gerecht zu werden.
+            </p>
+        </header>
+        {% endblock %}
+    </div>
+    
+    <div id="pageContent">
+        {% block content %}
+            {% load webdesign %}
+            {% lorem 6 p %}
+        {% endblock %}
+    </div>
+    
+    <div id="pageFooter">
+        {% block footer %}{% endblock %}
+    </div>
+{% endblock %}
 </div>
-
 </body>
 </html>
