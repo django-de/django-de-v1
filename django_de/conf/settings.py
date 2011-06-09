@@ -126,9 +126,11 @@ INSTALLED_APPS = (
     'south',
     'gunicorn',
     'compressor',
+    'django_markup',
 
     # Apps
     'django_de.apps.homepage',
+    'django_de.apps.wakawaka',
 )
 
 #==============================================================================
@@ -136,3 +138,7 @@ INSTALLED_APPS = (
 #==============================================================================
 
 THUMBNAIL_BASEDIR = '_thumbs'
+
+WAKAWAKA_SLUG_REGEX = r'((([A-Z]+[a-z]+){1,})(/([A-Z]+[a-z]+){1,})*)'
+WAKAWAKA_AUTO_REGEX = r'((([A-Z]+[a-z]+){2,})(/([A-Z]+[a-z]+){2,})*)'
+WAKAWAKA_DEFAULT_INDEX = 'Home'

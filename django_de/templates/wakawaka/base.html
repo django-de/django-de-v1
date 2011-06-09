@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+
+{% block content %}
+{% endblock %}
+
+{% block footer %}
+<div class="wiki-info">
+	<a href="{% url wakawaka_index %}">{% trans "Start" %}</a>
+	<a href="{% url wakawaka_revision_list %}">{% trans "Recent revisions" %}</a>
+	<a href="{% url wakawaka_page_list %}">{% trans "All Pages" %}</a>
+</div>
+{% endblock %}
