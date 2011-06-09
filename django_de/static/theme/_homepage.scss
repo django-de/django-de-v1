@@ -1,0 +1,97 @@
+#pageTeaser.claim{
+    background-image: url(img/header.jpg);
+    background-position: left bottom;
+    clear: both;
+    padding: 10px 0 125px 0;
+
+    h1{
+        span{
+            display: inline-block;
+            margin: 0 0 5px 0;
+            padding: 0 5px;
+            color: White;
+            font-size: 30px;
+            font-weight: normal;
+            line-height: 42px;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+    
+        span.quote{
+            padding: 0;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+        }
+    
+        span.quote-tl{
+            background: url(img/quote-tl.gif) top left no-repeat;
+            margin: -10px 0 0 -20px;
+        }
+    
+        span.quote-tr{
+            background: url(img/quote-tr.gif) top right no-repeat;
+            margin: -10px 0 0 0;
+        }
+    
+        span.line1{ margin-left: 55px; }
+        span.line2{ margin-left: 60px; }
+        span.line3{ margin-left: 75px; }
+    }
+}
+
+#eventBox{
+    width: 405px;
+    background-color: white;
+    -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    padding: 10px;
+    margin-top: -120px;
+    font-size: 14px;
+    line-height: 18px;
+
+    h2{
+        background-color: #96ca0d;
+        padding: 8px 0 8px 40px;
+        font-weight: normal;
+        font-size: 20px;
+        color: white;
+        margin: 0 0 10px 0;
+    }
+    
+    div{
+        overflow: hidden;
+        margin: 0 0 10px 0;
+        padding: 10px 0 0 0;
+        
+        h3{
+            font-weight: bold;
+            display: inline;
+            font-size: 1em;
+        }
+        
+        p{
+            display: inline;
+        }
+    
+        a.date{
+            float: left;
+            text-align: left;
+            font-size: 12px;
+            color: #96ca0d;
+            text-decoration: none;
+            line-height: 13px;
+            margin: -10px 10px 0 0;
+            display: inline-block;
+        
+            strong{
+                display: block;
+                background-color: #96ca0d;
+                font-size: 30px;
+                font-weight: normal;
+                color: white;
+                line-height: 30px;
+                width: 35px;
+                text-align: center;
+            }
+        }
+    }
+}

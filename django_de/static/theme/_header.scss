@@ -35,52 +35,8 @@
     }
 }
 
-#pageTeaser {
-    
-    &.terminate{
-        background: url(img/header-line.gif);
-        height: 29px;
-        margin: -20px 0 0 0;
-    }
-    
-    &.claim{
-        background-image: url(img/header.jpg);
-        background-position: left bottom;
-        clear: both;
-        padding: 10px 0 125px 0;
-    
-        h1{
-            span{
-                display: inline-block;
-                margin: 0 0 5px 0;
-                padding: 0 5px;
-                color: White;
-                font-size: 30px;
-                font-weight: normal;
-                line-height: 42px;
-                background-color: rgba(0, 0, 0, 0.8);
-            }
-        
-            span.quote{
-                padding: 0;
-                width: 20px;
-                height: 20px;
-                position: absolute;
-            }
-        
-            span.quote-tl{
-                background: url(img/quote-tl.gif) top left no-repeat;
-                margin: -10px 0 0 -20px;
-            }
-        
-            span.quote-tr{
-                background: url(img/quote-tr.gif) top right no-repeat;
-                margin: -10px 0 0 0;
-            }
-        
-            span.line1{ margin-left: 55px; }
-            span.line2{ margin-left: 60px; }
-            span.line3{ margin-left: 75px; }
-        }
-    }
+#pageTeaser.terminate{
+    background: url(img/header-line.gif);
+    height: 29px;
+    margin: -20px 0 0 0;
 }
