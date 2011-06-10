@@ -5,7 +5,6 @@
 
 {% block extrahead %}
 	{{ block.super }}
-
 	{# Don't let search engines scan this old revision #}
 	{% if rev.is_not_current %}
 		<meta name="robots" content="noindex" />

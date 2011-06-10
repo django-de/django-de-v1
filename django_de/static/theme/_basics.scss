@@ -12,3 +12,8 @@ body{
     margin: 0 auto;
     color: #3e4946;
 }
+
+.invisible{
+    position: absolute;
+    left: -9999em;
+}

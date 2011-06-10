@@ -1,9 +1,6 @@
-.invisible{
-    position: absolute;
-    left: -9999em;
-}
-
+@import "reset";
 @import "basics";
-@import "homepage";
 @import "header";
+@import "homepage";
 @import "content";
+@import "footer";
